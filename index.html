@@ -1,11 +1,51 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Intro Appi Canvas</title>
+<meta charset="UTF-8">
+<title>Figura con colores</title>
+
+<style>
+    body{
+        background:#e6e6e6;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        height:100vh;
+        margin:0;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+
+    /* Rectángulo grande */
+    .contenedor{
+        width:700px;
+        height:350px;
+        border-radius:25px;
+        border:3px solid black;
+        box-shadow:0px 8px 18px rgba(0,0,0,0.4);
+        position:relative;
+
+        /* CAMBIA ESTE COLOR */
+        background:linear-gradient(135deg, #ff0066, #6600ff);
+    }
+
+    /* Cuadro pequeño arriba izquierda */
+    .cuadro{
+        width:200px;
+        height:150px;
+        border-top-left-radius:25px;
+
+        /* CAMBIA ESTE COLOR */
+        background:#00bfff;
+    }
+</style>
 </head>
+
 <body>
- <h1> Ejemplo de appi Canvas</h1>   
+
+<div class="contenedor">
+    <div class="cuadro"></div>
+</div>
+
 </body>
 </html>
+
